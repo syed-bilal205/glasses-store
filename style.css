@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.button{
+    border: 1px solid black;
+    font-weight: 700;
+    color: black;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    background-color: white;
+}
+.togglerButton{
+    background-color: white;
+}
+.sliderText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    margin: 0 6rem;
+}
+.sliderText span{
+    font-weight: 700;
+}
+.sliderText h3{
+    font-size: 5rem;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+.banner .box{
+    position: relative;
+    height: 20rem;
+    border-radius: .2rem ;
+    overflow: hidden;
+    cursor: pointer;
+}
+.banner .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    transition: 0.5s ease-in;
+}
+.banner .box:hover img{
+    transform: scale(1.2);
+}
+.banner .box .content{
+    position: absolute;
+    top: 1rem;
+    padding: 0 1rem;
+    right: 1rem;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: .5rem;
+}
+.content h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.footerMainDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+.footerMainDiv ul li{
+    list-style: none;
+    color: black;
+}
+.footerMainDiv ul li a{
+    text-decoration: none;
+    color: black;
+}
+.footerMainDiv ul li i{
+    color: rgb(243, 76, 187);
+}
+.footerMainDiv h6{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: start;
+    padding: 0 1rem;
+}
+.newsletter input{
+    padding: .5rem 2rem;
+    border-radius: .3rem;
+    outline: none;
+    border: 1px solid black;
+}
+.newsletter input:focus{
+    outline: none;
+}
+.footerList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerLine{
+    background-color: black;
+    height: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerEnd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 0;
+    text-align: center;
+}
+.footerEnd span{
+    color:rgb(243, 76, 187) ;
+    font-weight: bold;
+}
+.bannerSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(236, 27, 201, 0.521);
+    padding: .5rem 0;
+    color: white;
+}
+.productsMainBox{
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+.productsBox{
+    border: 1px solid black;
+    width: 18rem;
+    height: 18rem;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+.productsBox img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+.productsBox:hover img{
+    transform: scale(1.1);
+}
+.stars{
+    color: rgb(243, 76, 187) ;
+}
+.productsContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 0;
+}
+.productsContent h6{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.productsContent span{
+    font-weight: bold;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.aboutMain{
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+/* .aboutImg{
+    width: 80rem;
+    height: 25rem;
+} */
+/* .aboutImg img{
+    width: 100%;
+    height: 100%;
+} */
+.aboutContent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+.aboutContent h3{
+    font-size: 3rem;
+}
+.aboutBox{
+    border: 1px solid black;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+.blogBox{
+    border: 1px solid black;
+    width: 20rem;
+    height: 23rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    padding-bottom: .5rem;
+}
+.blogBox img{
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+}
+.BlogContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: .5rem;
+    padding: 1rem;
+}
+.BlogContent h6{
+    font-weight: bold;
+}
+.BlogContent p{
+    color: #333;
+}
+.blogIcons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: .7rem;
+    padding-top:.5rem ;
+}
+.blogIcons i{
+    color: rgb(243, 76, 187) ;
+}
+.blogIcons span{
+    color: black;
+}
+.contactMain{
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    overflow: hidden;
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 100%;
+    gap: .9rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: start;
+}
+.contactForm input,textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+.map{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+.abouBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding: 1rem 2rem;
+    gap: 2rem;
+    border-radius: 0.5rem
+}
+.abouBox h6{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.abouBox input{
+    padding: .5rem 2rem;
+    border-radius: .3rem;
+    outline: none;
+    border: 1px solid black;
+    width: 100%;;
+}
+.abouBox input:focus{
+    outline: none;
+}
+.userBox{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+.userBox .userIcon-1{
+    position: absolute;
+    top: 1rem;
+    left: 0.5rem;
+}
+.userBox .userIcon-2{
+    position: absolute;
+    top: 4.5rem;
+    left: 0.5rem;
+}
+.userBox .userIcon-3{
+    position: absolute;
+    top: 8rem;
+    left: 0.5rem;
+}
+.navbar-color{
+    background-color: rgba(255, 0, 149, 0.74);
+}
+
+
+/* media queries */
+@media (max-width:946px) {
+    .footerMainDiv{
+        flex-direction: column;
+        align-items: start;
+    }
+    .sliderText{
+        margin: 0;
+        text-align: center;
+        align-items: center;
+    }
+    .aboutMain{
+        flex-direction: column;
+    }
+    .contactMain{
+        flex-direction: column;
+    }
+    .banner .box .content{
+        left: 4.5rem;
+    }
+}
